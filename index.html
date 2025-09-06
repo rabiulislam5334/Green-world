@@ -10,8 +10,189 @@
       href="./assets/hero-leaf1.png"
       type="image/x-icon"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
+    <header class="bg-[#15803D]">
+      <div class="navbar mx-auto shadow-sm md:w-11/12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>About</a></li>
+              <li>
+                <a>Gallery</a>
+              </li>
+              <li><a>Plant a Tree</a></li>
+            </ul>
+          </div>
+          <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+          <img src="./assets/hero-leaf1.png" alt="" class="w-10 invert" />
+          <h2 class="md:text-lg text-white font-bold">Green Earth</h2>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 space-x-5 text-white text-lg font-bold"
+          >
+            <li class="hover:bg-red-400 rounded-lg"><a>About</a></li>
+            <li class="hover:bg-red-400 rounded-lg">
+              <a>Gallery</a>
+            </li>
+            <li class="hover:bg-red-400 rounded-lg"><a>Plant a Tree</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="btn rounded-2xl md:text-lg text-green-600 bg-yellow-300 hover:bg-yellow-600 hover:text-white"
+            >Plant a Tree</a
+          >
+        </div>
+      </div>
+
+      <div class="hero bg-[#CFF0DC]">
+        <div class="flex md:w-11/12 mx-auto items-center flex-col lg:flex-row">
+          <div class="">
+            <img src="./assets/hero-leaf1.png" class="max-w-sm rounded-lg" />
+          </div>
+          <div class="text-center p-16">
+            <h1 class="text-lg md:text-3xl font-bold">
+              Plant a Tree, Grow a Future
+            </h1>
+            <p class="py-6">
+              Join our mission to plant 1 million trees and make the Earth
+              greener for future generations.
+            </p>
+            <button
+              class="btn rounded-2xl md:text-sm text-green-600 bg-yellow-300 hover:bg-yellow-600 hover:text-white"
+            >
+              Get Involved
+            </button>
+          </div>
+          <div>
+            <img
+              src="./assets/hero-leaf2.png"
+              class="max-w-sm rounded-lg hidden md:block"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-[#f0fdf4]">
+      <!-- product section start -->
+      <section class="">
+        <h2 class="text-center text-xl md:text-2xl font-bold md:pt-20 p-10">
+          Choose Your Trees
+        </h2>
+        <section
+          class="product w-11/12 mx-auto grid grid-cols-12 gap-4 md:my-20"
+        >
+          <!-- Left Sidebar / Top Sidebar on mobile -->
+          <div
+            class="sidebar-left col-span-12 lg:col-span-2 bg-gray p-4 order-1"
+          >
+            <h2 class="text-lg font-bold">Categories</h2>
+          </div>
+
+          <!-- Product Details -->
+          <div
+            class="product-details col-span-12 lg:col-span-8 bg-white p-4 order-2"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <!-- Product 1 -->
+              <div class="product-item bg-gray-100 p-4 rounded shadow">
+                Product 1
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-item bg-gray-100 p-4 rounded shadow">
+                Product 2
+              </div>
+
+              <!-- Product 3 -->
+              <div class="product-item bg-gray-100 p-4 rounded shadow">
+                Product 3
+              </div>
+
+              <!-- More products as needed -->
+            </div>
+          </div>
+
+          <!-- Right Sidebar / Bottom Sidebar on mobile -->
+          <div
+            class="sidebar-right col-span-12 lg:col-span-2 bg-white rounded-lg p-4 order-1 md:order-3"
+          >
+            <h2 class="text-lg font-bold">Your Cart</h2>
+          </div>
+        </section>
+      </section>
+      <!-- product section End -->
+      <!-- Campaign section start -->
+      <section class="">
+        <h2 class="text-center text-xl md:text-2xl font-bold md:pt-20 p-10">
+          About the Campaign
+        </h2>
+        <section
+          class="product w-11/12 mx-auto grid grid-cols-12 gap-4 my-5 md:my-20"
+        >
+          <!-- Left Sidebar / Top Sidebar on mobile -->
+          <div
+            class="sidebar-left col-span-12 lg:col-span-2 bg-gray p-4 order-1 hidden md:block"
+          ></div>
+
+          <!-- Campaign Details -->
+          <div
+            class="product-details col-span-12 lg:col-span-8 bg-white p-4 order-2"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <!-- Product 1 -->
+              <div class="product-item bg-gray-100 p-4 rounded shadow">
+                Product 1
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-item bg-gray-100 p-4 rounded shadow">
+                Product 2
+              </div>
+
+              <!-- More products as needed -->
+            </div>
+          </div>
+
+          <!-- Right Sidebar / Bottom Sidebar on mobile -->
+          <div
+            class="sidebar-right col-span-12 lg:col-span-2 rounded-lg p-4 md:order-3 hidden md:block"
+          ></div>
+        </section>
+      </section>
+      <!-- Campaign section End -->
+    </main>
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
 </html>
