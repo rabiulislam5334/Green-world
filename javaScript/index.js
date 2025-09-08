@@ -46,8 +46,8 @@ const loadallPlants = async () => {
     const res = await fetch(url);
     const data = await res.json();
     const plants = data.plants;
-    // console.log(modals);
-    showCategory(plants);
+    console.log(plants);
+    showProducts(plants);
   } catch (error) {}
 };
 
@@ -66,28 +66,13 @@ const showCategory = (categoriesData) => {
          `;
   });
 };
-// show all category
-/*const ShowallCategory = (plants) => {
-  categoryContainer.innerHTML = "";
-  categoriesData.forEach((plant) => {
-    categoryContainer.innerHTML += `
-    
-     <li
-                  id="${category.id}"
-                  class=" flex whitespace-nowrap rounded-sm p-2 md:w-full hover:bg-green-700  gap-10 hover:text-white shadow-none "
-                >
-                 All Plants ${plant.name}
-                </li>
-    
-         `;
-  });
-};*/
+
 /*showProduct*/
 const showProducts = (products) => {
   productContainer.innerHTML = "";
   products.forEach((product) => {
     productContainer.innerHTML += `
-        <div id="${product.id}" class="product-item w-4/5 md:w-full bg-white p-4 rounded shadow mx-auto ">
+        <div id="${product.id}" class="product-item w-4/5 md:w-full bg-white p-4 rounded shadow-lg mx-auto ">
                 <img src="${product.image}" alt="" class="w-full h-40 object-cover rounded mb-2" />
                 <div >
                   <h2 onclick="loadModal(${product.id})" class="title text-lg font-semibold my-2">${product.name}</h2>
@@ -196,4 +181,5 @@ const showLoading = () => {
 };
 // call function
 loadCategory();
-loadProduct(5);
+// loadProduct(5);
+loadallPlants();
